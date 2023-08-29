@@ -13,10 +13,6 @@ resource "random_string" "random" {
     upper = false
 }
 
-
-
-
-
 resource "azurerm_storage_account" "example" {
   name                     = "${lower(var.base_name)}${random_string.random.result}"
   resource_group_name      = var.resource_group_name

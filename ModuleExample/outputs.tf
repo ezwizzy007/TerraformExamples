@@ -12,3 +12,8 @@ output "stgAccessTier" {
   value = module.StorageAccount.stgAccessTier_out
   description = "access tier"
 }
+
+output "stgacctid" {
+  value = module.StorageAccount.stgacctid_out
+  description = "storage account id"
+}
